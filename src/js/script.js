@@ -26,7 +26,7 @@ const onTabClick = (event) => {
 		.classList.remove("hidden");
 };
 
-// Tabs menu
+// Tabs menu event
 tabs.forEach((tab) => tab.addEventListener("click", onTabClick));
 
 const navToggle = () => {
