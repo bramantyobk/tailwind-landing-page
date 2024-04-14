@@ -12,6 +12,15 @@ module.exports = {
 			fontFamily: {
 				sans: ["Rubik", "sans-serif"],
 			},
+			backgroundImage: () => ({
+				dots: "url('../images/bg-dots.svg')",
+			}),
+		},
+		screens: {
+			sm: "480px",
+			md: "768px",
+			lg: "1020px",
+			xl: "1440px",
 		},
 	},
 	plugins: [],
