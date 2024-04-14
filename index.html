@@ -12,9 +12,50 @@
   <title>Bookmark Landing Page</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
   <!-- Header Nav -->
-  <header></header>
+  <header class="container relative p-6 mx-auto">
+    <div class="flex items-center justify-between my-6 gap-x-20">
+      <!-- Logo -->
+      <div class="z-30">
+        <img src="src/images/logo-bookmark.svg" alt="logo bookmark" id="logo" />
+      </div>
+
+      <!-- Menu -->
+      <nav class="items-center hidden gap-x-10 text-grayishBlue md:flex">
+        <a href="#features" class="tracking-widest hover:text-softRed">FEATURES</a>
+        <a href="#download" class="tracking-widest hover:text-softRed">DOWNLOAD</a>
+        <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
+
+        <a href="#"
+          class="px-8 py-2 text-white border-2 rounded-lg shadow-md bg-softRed border-softRed hover:text-softRed hover:bg-white">Login</a>
+      </nav>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+      class="fixed inset-0 z-20 flex-col items-center self-end hidden w-full h-full px-6 py-1 pt-24 pb-4 tracking-widest text-white divide-y divide-gray-500 m-h-screen opacity-90 bg-veryDarkBlue">
+      <nav class="w-full py-3 text-center">
+        <a href="#features" class="block hover:text-softRed">FEATURES</a>
+      </nav>
+      <nav class="w-full py-3 text-center">
+        <a href="#download" class="block hover:text-softRed">DOWNLOAD</a>
+      </nav>
+      <nav class="w-full py-3 text-center">
+        <a href="#faq" class="block hover:text-softRed">FAQ</a>
+      </nav>
+      <nav class="w-full py-3 text-center">
+        <a href="#" class="block hover:text-softRed">LOGIN</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Main Section-->
   <main>
